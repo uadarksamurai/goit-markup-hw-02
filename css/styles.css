@@ -1,0 +1,33 @@
+body {
+    background-color: #FFFFFF;
+    color: #434455;
+}
+
+/* прибрати крапки у списках, в тз говориться,
+що крім body глобальних стилів елементів не має бути. Це пам'ятка собі */
+
+ul {
+    list-style: none;
+}
+
+/* main text color  #434455 slate */
+
+/* second color #8E8F99* light slate/
+
+/* accent #E7E9FC */
+
+/* headings #2E2F42 navy blue*/
+
+/* primary brand #4D5AE5 iris*/
+
+
+/* navigation */
+
+.site-nav .link {
+    color: #2E2F42;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #4D5AE5;
+}
