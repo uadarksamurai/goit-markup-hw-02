@@ -1,33 +1,269 @@
+:root {
+    --primary-title-color: #2E2F42;
+    --additional-title-color: #ffffff;
+    --primary-text-color: #434455;
+    --additional-text-color: #E7E9FC;
+    --primary-btn-color: #ffffff;
+    --additional-btn-color: #4D5AE5;
+    --accent-color: #4D5AE5;
+
+}
+
+
+
 body {
-    background-color: #FFFFFF;
-    color: #434455;
+   font-family: "Roboto", sans-serif;
 }
 
-/* прибрати крапки у списках, в тз говориться,
-що крім body глобальних стилів елементів не має бути. Це пам'ятка собі */
-
-ul {
+.list {
     list-style: none;
+  }
+  
+.link {
+    text-decoration: none;
 }
 
-/* main text color  #434455 slate */
-
-/* second color #8E8F99* light slate/
-
-/* accent #E7E9FC */
-
-/* headings #2E2F42 navy blue*/
-
-/* primary brand #4D5AE5 iris*/
-
-
-/* navigation */
-
-.site-nav .link {
-    color: #2E2F42;
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: #4D5AE5;
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* ---HEADER--- */
+
+.header {
+}
+
+.header-nav {
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.header-logo > .header-logo-part {
+    color: var(--primary-title-color);
+}
+
+
+.header-list {
+}
+
+.header-litem {
+}
+/* задати current */
+.header-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color)
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-contacts {
+}
+
+.contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+
+/* ---HERO--- */
+
+/* прибрати background-color. 
+потрібен тільки для того, щоб бачити білий текст */
+.hero {
+    background-color: #434455; 
+}
+.hero-title {  
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--additional-title-color);
+}
+.hero-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-btn-color);
+    cursor: pointer;
+}
+
+/* ---OUR PRINCIPLES--- */
+
+.principles {
+}
+
+.principles-list {
+}
+
+.principles-litem {
+}
+
+.visually-hidden {
+}
+
+.principles-title {
+}
+
+.principles-text {
+}
+
+/* WHAT WE ARE DOING */
+
+.wedo {
+}
+.wedo-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-title-color);
+}
+.wedo-list {
+}
+.list {
+}
+.wedo-litem {
+}
+
+/* ---OUR TEAM--- */
+
+.team {
+
+}
+
+.team-main-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-title-color);
+}
+
+.team-title {
+    text-align: center;
+   }
+
+.team-list {
+}
+
+.team-litem {
+}
+
+.team-text {
+    text-align: center;
+}
+
+/* --FOOTER--- */
+
+.footer {
+    background-color: var(--primary-title-color);
+}
+
+.footer-logo-part {
+    color: var(--additional-title-color);
+}
+
+.footer-text {
+    color: var(--additional-text-color);
+}
+
+/* --PORTFOLIO FILTERS */
+
+.filters {
+}
+
+.filters-main-title {
+}
+
+.visually-hidden {
+}
+
+.filters-list-btn {
+}
+
+.filters-litem-btn {
+}
+
+.filters-btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: var(--additional-btn-color);
+cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+    color: var(--primary-btn-color);
+}
+
+.filters-list-img {
+}
+
+.filters-litem-img {
+}
+
+.filters-title {
+}
+
+.filters-text {
 }

@@ -4,99 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-        <!--різні кольори, слова чи картинка? прибрати лінію і додати посилання-->
-            <a href="">
-            webstudio
+    <header class="header">
+        <nav class="header-nav">
+            <a class="header-logo link" href="./index.html">
+            web<span class="header-logo-part">studio</span>
             </a>
-    
-            <ul class="site-nav link">
-                <li><a href="./index.html" class="link">Studio</a></li>
-                <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-                <li><a href="" class="link">Contacts</a></li>
+
+            <ul class="header-list list">
+                <li class="header-litem"><a class="header-link link" href="./index.html">Studio</a></li>
+                <li class="header-litem"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="header-litem"><a class="header-link link" href="">Contacts</a></li>
             </ul>
         </nav>
-        
-        <ul>
+
+        <ul class="header-contacts list">
             <!--перевірити класи-->
-            <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-            <li><a href="tel:+11(000)111-11-11" class="contact-link">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a></li>
+            <li><a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000) 111-11-11</a></li>
         </ul>
 
     </header>
 
     <main>
         <!-- filters -->
-        <section> 
-            <ul>
-                <li><button type="button">All</button></li>
-                <li><button type="button">Web Site</button></li>
-                <li><button type="button">App</button></li>
-                <li><button type="button">Design</button></li>
-                <li><button type="button">Marketing</button></li>
+        <section class="filters"> 
+            <h1 class="filters-main-title visually-hidden">Portfolio</h1>
+            <ul class="filters-list-btn list">
+                <li class="filters-litem-btn"><button type="button" class="filters-btn">All</button></li>
+                <li class="filters-litem-btn"><button type="button" class="filters-btn">Web Site</button></li>
+                <li class="filters-litem-btn"><button type="button" class="filters-btn">App</button></li>
+                <li class="filters-litem-btn"><button type="button" class="filters-btn">Design</button></li>
+                <li class="filters-litem-btn"><button type="button" class="filters-btn">Marketing</button></li>
             </ul>
         
-            <ul>
-                <li>
+            <ul class="filters-list-img list">
+                <li class="filters-litem-img">
                     <img src="./images/img-w1.jpg" alt="bank app interface" width="360" height="300">
-                    <h3>Banking App Interface Concept</h3>
-                    <p>App</p>
+                    <h2 class="filters-title title">Banking App Interface Concept</h2>
+                    <p class="filters-text text">App</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w2.jpg" alt="cashless payment with smartphone" width="360" height="300">
-                    <h3>Cashless Payment</h3>
-                    <p>Marketing</p>
+                    <h2 class="filters-title title">Cashless Payment</h2>
+                    <p class="filters-text text">Marketing</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w3.jpg" alt="laptop and smarphone" width="360" height="300">
-                    <h3>Meditaion App</h3>
-                    <p>App</p>
+                    <h2 class="filters-title title">Meditaion App</h2>
+                    <p class="filters-text text">App</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w4.jpg" alt="steering wheel with smartphone" width="360" height="300">
-                    <h3>Taxi Service</h3>
-                    <p>Marketing</p>
+                    <h2 class="filters-title title">Taxi Service</h2>
+                    <p class="filters-text text">Marketing</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w5.jpg" alt="smartphone wallpapers" width="360" height="300">
-                    <h3>Screen Illustrations</h3>
-                    <p>Design</p>
+                    <h2 class="filters-title title">Screen Illustrations</h2>
+                    <p class="filters-text text">Design</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w6.jpg" alt="woman smiling holding smartphone" width="360" height="300">
-                    <h3>Online Courses</h3>
-                    <p>Marketing</p>
+                    <h2 class="filters-title title">Online Courses</h2>
+                    <p class="filters-text text">Marketing</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w7.jpg" alt="instagram pages" width="360" height="300">
-                    <h3>Instagram Stories Concept</h3>
-                    <p>Design</p>
+                    <h2 class="filters-title title">Instagram Stories Concept</h2>
+                    <p class="filters-text text">Design</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w8.jpg" alt="woman with store bag" width="360" height="300">
-                    <h3>Organic Food</h3>
-                    <p>Web Site</p>
+                    <h2 class="filters-title title">Organic Food</h2>
+                    <p class="filters-text text">Web Site</p>
                 </li>
-                <li>
+                <li class="filters-litem-img">
                     <img src="./images/img-w9.jpg" alt="pouring coffee into a cup" width="360" height="300">
-                    <h3>Fresh Coffee</h3>
-                    <p>Web Site</p>
+                    <h2 class="filters-title title">Fresh Coffee</h2>
+                    <p class="filters-text text">Web Site</p>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <a href="">
-            webstudio
-        </a>
-        <p>
-            Increase the flow of customers and <br> 
+    <footer class="footer">
+        <a class="header-logo link" href="./index.html">
+            web<span class="footer-logo-part">studio</span>
+            </a>
+
+        <p class="footer-text text">
+            Increase the flow of customers and <br>
             sales for your business with digital <br> marketing & growth solutions.
         </p>
     </footer>
